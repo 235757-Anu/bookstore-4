@@ -1,0 +1,46 @@
+:host {
+  /* background-color: black; */
+  color: white;
+  padding: 20px;
+}
+
+.card {
+  /* background-color: #222;
+  color: white; */
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-muted {
+  color: #aaa;
+}
+
+strong {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.row{
+    width: 80vw;
+}
+button{
+  width: 20%;
+  margin: 2px 7px;
+}
+.cl{
+  display: flex;
+  flex-direction: row;
+}

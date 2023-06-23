@@ -1,0 +1,20 @@
+<div class="body">
+  <app-header></app-header>
+    <div>
+      <div class="search-container mt-5">
+          <form (ngSubmit)="searchBooks()" [formGroup]="searchForm">
+                <div class="form-group row mt-0 mb-2">
+                  <div class="Searchbutton">
+                      <input type="text" name="title" [(ngModel)]="title" class="form-control" value="" placeholder="Book title, e.g., The Brightest Night" formControlName="title">
+                      <button class="btn btn-dark mb-10">Search</button>
+                  </div>
+                </div>        
+          </form>
+      </div>
+  </div>
+    <div class="container">
+        <app-listbook [books]="bookArr"></app-listbook>
+    </div>
+</div>
+<app-footer></app-footer>
+    

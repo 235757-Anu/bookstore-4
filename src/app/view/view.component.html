@@ -1,0 +1,40 @@
+<app-header></app-header>
+  <div *ngIf="book" style="margin-top: 8%; ">
+    <div class="card mb-2">
+      <div class="row align-items-center">
+        <div class="col-sm-2">
+          <img [src]="book.imageUrl" [alt]="book.title" width="100%">
+        </div>
+        <div class="col-sm-10">
+          <div class="card-body">
+            <h5 class="card-title">{{ book.title }}</h5>
+            <p class="my-1 text-muted">
+              <strong>Author:</strong> {{ book.author }}
+            </p>
+            <p class="my-1 text-muted">
+              <strong>Publish Year:</strong> {{ book.publishYear }}
+            </p>
+            <p class="my-1">
+              <strong>Summary:</strong>
+            </p>
+            <p class="my-1">
+              {{ book.summary }}
+            </p>
+          </div>
+        </div>
+        <div class="cl">
+        <button type="button" class="btn btn-outline-secondary" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            viewBox="0 0 24 24">
+            <path d="M12 4v16m8-8H4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+          </svg>
+          <span class="m-2">Add</span>
+        </button>
+        <button type="button" class="btn btn-outline-secondary" routerLink="/create" >Cancel
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>
